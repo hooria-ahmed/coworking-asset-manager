@@ -222,8 +222,11 @@ node --test --test-concurrency=1
 
 ---
 
-## 👩‍💻 Author
+## 👥 Engineering Team & Contributors
 
-**Hooria Ahmed**  
-- GitHub: [@hooria-ahmed](https://github.com/hooria-ahmed)
-- Email: hooria.2006.haq@gmail.com
+| Contributor | Focus Areas & Modules |
+| :--- | :--- |
+| **Misbah Ul Hasan** | **AI Services & Analytics Engine**: LLM Integration (Groq / Anthropic), Availability-Aware Asset Ranking, Usage & Financial Reporting |
+| **Hamza Siddiqui** | **Operations & User Management**: Asset Request & Multi-Stage Approval Engine, Checkout/Return Lifecycle, Overdue Monitoring |
+| **Syed Azlaan Aqib** | **Asset Catalog & Maintenance**: Inventory Architecture, Category Taxonomy, Search Filtering, Hardware Maintenance Workflows |
+| **Hooria Ahmed** | **AI Experiences & Event Notifications**: Conversational AI UI, Dynamic Recommendation Screens, Real-Time Notification Pipeline, Audit History |
