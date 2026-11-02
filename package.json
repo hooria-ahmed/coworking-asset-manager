@@ -1,0 +1,12 @@
+{
+  "name": "coworking-asset-manager",
+  "private": true,
+  "description": "AI-Powered Co-Working Space Asset Manager (React + Express + MySQL)",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "build": "npm run install:all && npm run build --prefix client",
+    "start": "node server/src/server.js",
+    "db:setup": "npm run db:setup --prefix server",
+    "db:demo": "npm run db:demo --prefix server"
+  }
+}
