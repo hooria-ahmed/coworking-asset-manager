@@ -10,7 +10,7 @@ const app = express();
 // Behind a reverse proxy (Nginx, Render, Railway...) set TRUST_PROXY=1 so req.ip is the visitor's
 // address; the login lock-out is kept per address (modules/auth/routes.js).
 if (process.env.TRUST_PROXY) app.set('trust proxy', /^\d+$/.test(process.env.TRUST_PROXY) ? Number(process.env.TRUST_PROXY) : process.env.TRUST_PROXY);
-app.use(cors({ origin: process.env.CLIENT_ORIGIN || 'http://localhost:5173' }));
+app.use(cors({ origin: process.env.CLIENT_ORIGIN || true, credentials: true }));
 app.use(express.json({ limit: '3mb' })); // room for a 2 MB base64 asset image
 
 app.get('/api/health', (req, res) => res.json({ ok: true }));

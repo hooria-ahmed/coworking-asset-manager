@@ -14,6 +14,7 @@ const pool = mysql.createPool({
   connectionLimit: 10,
   dateStrings: true,
   timezone: 'Z',
+  ssl: process.env.DB_SSL === 'true' ? { rejectUnauthorized: false } : undefined,
 });
 
 // Make CURDATE()/NOW() use the same clock as the Node server. Without this, a MySQL server on
